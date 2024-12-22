@@ -1,0 +1,9 @@
+@media screen and (max-width: 1400px) {
+    .text-header {
+        padding: 0px !important;
+    }
+
+    .text-header span span{
+        font-size: 14px !important;
+    }
+}
