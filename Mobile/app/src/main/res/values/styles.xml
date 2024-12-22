@@ -1,0 +1,79 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="ThemeSpinner">
+        <!-- Color when pressed -->
+        <item name="colorAccent">@color/colorAccent</item>
+        <!-- Default color for the dropdown arrow and line -->
+        <item name="colorControlNormal">@color/colorAccent</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="cust_dialog" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="android:background">@color/color_blanco</item>
+        <item name="android:windowBackground">@color/color_amarillo</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:labelTextSize">30sp</item>
+        <item name="colorAccent">@color/color_amarillo</item>
+        <item name="android:textColorPrimary">@color/color_amarillo</item>
+    </style>
+
+    <style name="cust_dialog_amarillo" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="android:background">@color/color_blanco</item>
+        <item name="android:windowBackground">@color/color_amarillo</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:labelTextSize">30sp</item>
+        <item name="colorAccent">@color/color_amarillo</item>
+        <item name="android:textColorPrimary">@color/color_amarillo</item>
+    </style>
+
+    <style name="cust_dialog_verde" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="android:background">@color/color_blanco</item>
+        <item name="android:windowBackground">@color/color_verde</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:labelTextSize">30sp</item>
+        <item name="colorAccent">@color/color_verde</item>
+        <item name="android:textColorPrimary">@color/color_verde</item>
+    </style>
+
+    <style name="cust_dialog_azul" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="android:background">@color/color_blanco</item>
+        <item name="android:windowBackground">@color/color_azul_oscuro</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:labelTextSize">30sp</item>
+        <item name="colorAccent">@color/color_azul_oscuro</item>
+        <item name="android:textColorPrimary">@color/color_azul_oscuro</item>
+    </style>
+
+    <style name="cust_dialog_rojo" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="android:background">@color/color_blanco</item>
+        <item name="android:windowBackground">@color/color_rojo</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:labelTextSize">30sp</item>
+        <item name="colorAccent">@color/color_rojo</item>
+        <item name="android:textColorPrimary">@color/color_rojo</item>
+    </style>
+
+    <style name="cust_dialog_azul_claro" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="android:background">@color/color_blanco</item>
+        <item name="android:windowBackground">@color/color_azul_claro</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:labelTextSize">30sp</item>
+        <item name="colorAccent">@color/color_azul_claro</item>
+        <item name="android:textColorPrimary">@color/color_azul_claro</item>
+    </style>
+
+</resources>

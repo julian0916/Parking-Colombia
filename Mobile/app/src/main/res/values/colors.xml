@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryOLD">#6200EE</color>
+    <color name="colorPrimary">#21334C</color>
+
+    <color name="colorPrimaryDarkOLD">#3700B3</color>
+    <color name="colorPrimaryDark">#162E46</color>
+
+    <color name="colorAccentOLD">#03DAC5</color>
+    <color name="colorAccent">#21334C</color>
+
+    <color name="color_botonOLD">#7E5ABB</color>
+    <color name="color_boton">#21334C</color>
+
+    <color name="color_verde">#79A667</color>
+    <color name="color_amarillo">#EBBC44</color>
+    <color name="color_rojo">#df3241</color>
+    <color name="color_azul_claro">#76AFA1</color>
+    <color name="color_azul_oscuro">#162E46</color>
+
+    <color name="color_verde_claro">#9BCB89</color>
+    <color name="color_amarillo_claro">#FBDA87</color>
+    <color name="color_rojo_claro">#DD5864</color>
+    <color name="color_azul_claro_claro">#A2C1B9</color>
+    <color name="color_azul_oscuro_claro">#2E5D8C</color>
+
+    <color name="color_blanco">#FFFFFF</color>
+    <color name="color_gris">#AAAAAA</color>
+</resources>

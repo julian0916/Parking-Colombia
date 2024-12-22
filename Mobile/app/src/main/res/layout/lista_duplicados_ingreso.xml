@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical" android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/background_light">
+    <TextView
+            android:text="Id:"
+            android:textSize="@dimen/size_letra"
+            android:textColor="@color/color_boton"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:id="@+id/textView12" android:layout_below="@+id/textView19"
+            android:layout_alignStart="@+id/textView19"/>
+    <TextView
+            android:text="Estado:"
+            android:textSize="@dimen/size_letra"
+            android:textColor="@color/color_boton"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:id="@+id/textViewEstado"/>
+    <TextView
+            android:text="Placa:"
+            android:textSize="@dimen/size_letra"
+            android:textColor="@color/color_boton"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewEstado"
+            android:layout_alignStart="@+id/textViewEstado"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="2dp"
+            android:id="@+id/textView19"/>
+    <TextView
+            android:text="Entrada:"
+            android:textSize="@dimen/size_letra"
+            android:textColor="@color/color_boton"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView13"
+            android:layout_below="@+id/textView12"
+            android:layout_alignStart="@+id/textView12"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="2dp"/>
+    <TextView
+            android:text="Promotor:"
+            android:textColor="@color/color_boton"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView14"
+            android:layout_below="@+id/textView13"
+            android:layout_marginTop="2dp"
+            android:layout_alignStart="@+id/textView13" android:layout_alignParentStart="true"
+    />
+    <TextView
+            android:text="Zona:"
+            android:textSize="@dimen/size_letra"
+            android:textColor="@color/color_boton"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:id="@+id/textView15"
+            android:layout_alignStart="@+id/textView14"
+            android:layout_below="@+id/promotor"
+            android:layout_width="70dp"/>
+    <TextView
+            android:textSize="@dimen/size_letra"
+            android:textColor="@color/color_boton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/id"
+            android:layout_alignTop="@+id/textView12" android:layout_toEndOf="@+id/textView12" android:text="Id"/>
+    <TextView
+            android:textSize="@dimen/size_letra"
+            android:textColor="@color/color_boton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/estado"
+            android:layout_alignTop="@+id/textViewEstado"
+            android:layout_toEndOf="@+id/textViewEstado"
+            android:text="Estado"
+            android:layout_alignBottom="@+id/textViewEstado"/>
+    <TextView
+            android:textSize="@dimen/size_letra"
+            android:textColor="@color/color_boton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/placa"
+            android:layout_alignTop="@+id/textView19" android:layout_toEndOf="@+id/textView19" android:text="Placa"
+            android:layout_alignBottom="@+id/textView19"/>
+    <TextView
+            android:text="Entrada"
+            android:textSize="@dimen/size_letra"
+            android:textColor="@color/color_boton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/entrada"
+            android:layout_alignTop="@+id/textView13"
+            android:layout_toEndOf="@+id/textView13"/>
+    <TextView
+            android:text="Promotor"
+            android:textSize="@dimen/size_letra"
+            android:textColor="@color/color_boton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/promotor" android:layout_toEndOf="@+id/textView14"
+            android:layout_alignTop="@+id/textView14"/>
+    <TextView
+            android:text="Zona"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/size_letra"
+            android:textColor="@color/color_boton"
+            android:id="@+id/zona"
+            android:layout_toEndOf="@+id/textView15"
+            android:layout_alignTop="@+id/textView15"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="5dp" android:layout_alignParentStart="true"
+            android:layout_marginStart="146dp"
+            android:id="@+id/textView21" android:layout_below="@+id/pagar"
+    />
+
+    <Button
+            android:text="@string/boton_pago_extemporaneo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/pagar"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:background="@drawable/boton_redondeado_azul_claro"
+            android:textColor="@android:color/background_light"
+            android:layout_alignStart="@+id/reportar" android:layout_marginTop="20dp"
+            android:layout_below="@+id/textView15" android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true" android:layout_marginLeft="2dp" android:layout_marginRight="2dp"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="5dp"
+    />
+
+    <Button
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/logo_pagar"
+            android:layout_alignTop="@+id/pagar"
+            android:layout_alignBottom="@+id/pagar"
+            android:layout_alignEnd="@+id/pagar"
+            android:background="@drawable/logo_duplicado"
+    />
+
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="2dp" android:layout_alignParentStart="true"
+            android:id="@+id/button3"
+            android:background="@drawable/boton_redondeado_azul" android:layout_marginTop="20dp"
+            android:layout_below="@+id/logo_pagar"/>
+
+</RelativeLayout>

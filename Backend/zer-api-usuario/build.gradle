@@ -1,0 +1,42 @@
+plugins {
+	id 'org.springframework.boot' version '2.1.7.RELEASE'
+	id 'java'
+	id 'war'
+	id "io.swagger.core.v3.swagger-gradle-plugin" version "2.1.5"
+}
+
+apply plugin: 'io.spring.dependency-management'
+
+group = 'co.zer'
+version = ''
+sourceCompatibility = '1.8'
+
+repositories {
+	mavenCentral()
+}
+
+bootRun {
+	systemProperties = System.properties as Map<String, ?>
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	runtimeOnly 'org.postgresql:postgresql'
+
+	implementation group: 'com.sun.mail', name: 'javax.mail', version: '1.6.2'
+	implementation group: 'org.bitbucket.b_c', name: 'jose4j', version: '0.6.3'
+
+	//SpringFox dependencies
+	implementation group: 'io.springfox', name: 'springfox-swagger2', version: '2.9.2'
+	implementation group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.9.2'
+	implementation group: 'com.github.joschi.jackson', name: 'jackson-datatype-threetenbp', version: '2.6.4'
+	implementation 'org.springframework.boot:spring-boot-starter-tomcat'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+	//jwt
+	implementation 'com.auth0:java-jwt:3.11.0'
+
+	//swagger
+	implementation group: 'io.swagger.core.v3', name: 'swagger-annotations', version: '2.1.5'
+}

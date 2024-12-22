@@ -1,0 +1,142 @@
+server:
+  servlet:
+    context-path: /zer-api-dashboard
+  port: 8088
+spring:
+  profiles:
+    active:
+      - development
+---
+spring:
+  profiles: production
+
+  # ===============================
+  # DATABASE CONNECTION
+  # ===============================
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://107.20.126.176/zer_db
+    username: "SOMOSpr0duc10n"
+    password: "S0M05*&hytrfcx#l0uVbWq"
+
+  # ===============================
+  # JPA / HIBERNATE
+  # ===============================
+  jpa:
+    hibernate:
+      # To be updated in real production usage!
+      ddl-auto: none
+    show-sql: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        # Fix Postgres JPA Error:
+        # Method org.postgresql.jdbc.PgConnection.createClob() is not yet implemented.
+        temp:
+          use_jdbc_metadata_defaults: false
+        jdbc:
+          lob:
+            non_contextual_creation: true
+  jmx:
+    default_domain: zer-api-dashboard
+
+---
+spring:
+  profiles: test
+
+  # ===============================
+  # DATABASE CONNECTION
+  # ===============================
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://somosdb.cjks8pdzuwxf.us-east-2.rds.amazonaws.com/zer_db
+    username: postgres
+    password: "wiZufUZ3usAqITRc5T7J"
+
+  # ===============================
+  # JPA / HIBERNATE
+  # ===============================
+  jpa:
+    hibernate:
+      # To be updated in real production usage!
+      ddl-auto: none
+    show-sql: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        # Fix Postgres JPA Error:
+        # Method org.postgresql.jdbc.PgConnection.createClob() is not yet implemented.
+        temp:
+          use_jdbc_metadata_defaults: false
+        jdbc:
+          lob:
+            non_contextual_creation: true
+  jmx:
+    default_domain: zer-api-dashboard
+
+---
+spring:
+  profiles: development
+
+  # ===============================
+  # DATABASE CONNECTION
+  # ===============================
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://200.122.220.171:3000/zer_db
+    username: "SOMOSpr0duc10n"
+    password: "S0M05*&hytrfcx#l0uVbWq"
+
+  # ===============================
+  # JPA / HIBERNATE
+  # ===============================
+  jpa:
+    hibernate:
+      # To be updated in real production usage!
+      ddl-auto: none
+    show-sql: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        # Fix Postgres JPA Error:
+        # Method org.postgresql.jdbc.PgConnection.createClob() is not yet implemented.
+        temp:
+          use_jdbc_metadata_defaults: false
+        jdbc:
+          lob:
+            non_contextual_creation: true
+  jmx:
+    default_domain: zer-api-dashboard
+---
+spring:
+  profiles: localdevelopment
+
+  # ===============================
+  # DATABASE CONNECTION
+  # ===============================
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://10.10.7.124:3000/zer_db
+    username: "SOMOSpr0duc10n"
+    password: "S0M05*&hytrfcx#l0uVbWq"
+
+  # ===============================
+  # JPA / HIBERNATE
+  # ===============================
+  jpa:
+    hibernate:
+      # To be updated in real production usage!
+      ddl-auto: none
+    show-sql: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        # Fix Postgres JPA Error:
+        # Method org.postgresql.jdbc.PgConnection.createClob() is not yet implemented.
+        temp:
+          use_jdbc_metadata_defaults: false
+        jdbc:
+          lob:
+            non_contextual_creation: true
+  jmx:
+    default_domain: zer-api-gateway

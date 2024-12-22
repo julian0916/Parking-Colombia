@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">ZER Somos</string>
+    <string name="version_app">Versión 2.8.2</string>
+    <string name="describe_clave">Clave para acceder al sistema</string>
+    <string name="usuario_descripcion">Usuario para acceder al sistema</string>
+    <string name="boton_ingresar">Ingresar</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="boton_prepago">Prepago</string>
+    <string name="boton_postpago">Postpago</string>
+    <string name="boton_duplicados">Duplicados</string>
+    <string name="boton_venta_prepago">Venta Prepago</string>
+    <string name="boton_cerrar_por_placa">Cerrar Por Placa</string>
+    <string name="boton_listar_vigentes">Listar Vigentes</string>
+    <string name="buscar_por_placa">Buscar por placa</string>
+    <string name="titulo_prepago">Prepago</string>
+    <string name="titulo_placa">Placa</string>
+    <string name="titulo_horas">Horas</string>
+    <string name="boton_venta_postpago">Venta Postpago</string>
+    <string name="titulo_postpago">Postpago</string>
+    <string name="boton_buscar_por_placa">Buscar Placa</string>
+    <string name="titulo_buscar_por_placa">Buscar</string>
+    <string name="Buscar">Buscar</string>
+    <string name="boton_pago_extemporaneo">Pago Extemporaneo</string>
+    <string name="titulo_estado_zona">Listar Vigentes</string>
+    <string name="titulo_zona">Zona</string>
+    <string name="boton_listar">Listar</string>
+    <string name="titulo_alertas_prepago">Alertas Prepago</string>
+    <string name="boton_lista_pasar_postpago">Ventas Vencidas</string>
+    <string name="boton_iniciar_postpago">Iniciar Postpago</string>
+    <string name="boton_liberar_cupo">Cupo Disponible</string>
+    <string name="titulo_reimprimir">Reimprimir</string>
+    <string name="titulo_duplicado">Duplicados</string>
+    <string name="boton_ventana_supervision">Supervisar</string>
+    <string name="boton_grabar_supervision">Grabar Informe</string>
+    <string name="titulo_ventana_supervision">Supervisión</string>
+    <string name="informacion">Información</string>
+    <string name="estadistica">Estadistica</string>
+    <string name="bloqueados">usuarios bloqueados</string>
+    <string name="title_activity_listar_bloqueados">ListarBloqueados</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

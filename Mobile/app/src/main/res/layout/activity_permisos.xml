@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".permisos.PermisosActivity">
+    <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:srcCompat="@drawable/login_background"
+            android:id="@+id/imageButtonFondo"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="1.0"/>
+    <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/imageButtonBlanco"
+            android:background="@drawable/boton_redondeado_blanco" app:layout_constraintTop_toTopOf="@+id/guideline5"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintStart_toStartOf="@+id/guideline3" app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintVertical_bias="1.0" app:layout_constraintBottom_toBottomOf="@+id/textView7"/>
+    <ImageView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:background="@drawable/boton_redondeado_azul"
+            android:id="@+id/imageViewAzul"
+            app:layout_constraintTop_toTopOf="@+id/guideline" app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"/>
+    <Button
+            android:id="@+id/ingresar"
+            android:layout_width="0dp"
+            android:layout_height="62dp"
+            android:text="@string/boton_ingresar"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:background="@drawable/boton_redondeado_amarillo"
+            android:textColor="@android:color/background_light"
+            app:layout_constraintTop_toBottomOf="@+id/zonas"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"/>
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:id="@+id/guideline"
+                                                android:orientation="horizontal"
+                                                app:layout_constraintGuide_percent="0.07"/>
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:id="@+id/guideline2"
+                                                android:orientation="horizontal"
+                                                app:layout_constraintGuide_percent="0.85"/>
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:id="@+id/guideline3"
+                                                android:orientation="vertical"
+                                                app:layout_constraintGuide_percent="0.07"/>
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:id="@+id/guideline4"
+                                                android:orientation="vertical"
+                                                app:layout_constraintGuide_percent="0.93"/>
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:id="@+id/guideline5"
+                                                android:orientation="horizontal"
+                                                app:layout_constraintGuide_percent="0.11"/>
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:id="@+id/guideline6"
+                                                android:orientation="vertical"
+                                                app:layout_constraintGuide_percent="0.09"/>
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:id="@+id/guideline7"
+                                                android:orientation="vertical"
+                                                app:layout_constraintGuide_percent="0.91"/>
+    <Spinner
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" android:id="@+id/horas"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:textColorHighlight="@color/color_boton"
+            android:backgroundTint="@color/color_boton"
+            android:textColor="@android:color/background_dark"
+            android:textColorHint="@color/color_boton"
+            android:textCursorDrawable="@color/color_boton"
+            android:dropDownWidth="match_parent"
+            android:spinnerMode="dropdown"
+            android:layout_marginTop="1dp"
+            android:theme="@style/ThemeSpinner"/>
+    />
+    <Spinner
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" android:id="@+id/zonas"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:textColorHighlight="@color/color_boton"
+            android:backgroundTint="@color/color_boton"
+            android:textColor="@android:color/background_dark"
+            android:textColorHint="@color/color_boton" android:textCursorDrawable="@color/color_boton"
+            android:dropDownWidth="match_parent" android:spinnerMode="dropdown" android:layout_marginTop="1dp"
+            android:theme="@style/ThemeSpinner"/>
+    <TextView
+            android:text="Seleccionar "
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" android:id="@+id/textView"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7" app:layout_constraintTop_toTopOf="@+id/imageViewAzul"
+            app:layout_constraintBottom_toBottomOf="@+id/imageViewAzul"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/cardview_light_background" android:textStyle="bold"
+            android:textAlignment="center" app:layout_constraintStart_toEndOf="@+id/salir"/>
+    <TextView
+            android:text="Cuenta"
+            android:textColor="@color/color_boton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" android:id="@+id/textView2"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewAzul" android:layout_marginTop="10dp"
+            android:layout_marginStart="4dp"/>
+    <TextView
+            android:text="Zona"
+            android:textColor="@color/color_boton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" android:id="@+id/textView3"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintTop_toBottomOf="@+id/horas"
+            app:layout_constraintHorizontal_bias="0.0" android:layout_marginTop="10dp"
+            android:layout_marginStart="4dp"/>
+    <TextView
+            android:textColor="@color/color_blanco"
+            android:text="fin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView7"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintHorizontal_bias="0.496" app:layout_constraintTop_toBottomOf="@+id/ingresar"/>
+    <Button
+            android:layout_width="50dp"
+            android:layout_height="0dp" android:id="@+id/salir"
+            android:background="@drawable/logo_exit"
+            app:layout_constraintBottom_toBottomOf="@+id/imageViewAzul"
+            app:layout_constraintTop_toTopOf="@+id/imageViewAzul"
+            app:layout_constraintStart_toStartOf="@+id/imageViewAzul"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

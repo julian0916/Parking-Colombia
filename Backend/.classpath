@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="zer-api-configuracion/src/main/java"/>
+	<classpathentry kind="src" path="zer-api-configuracion/src/test/java"/>
+	<classpathentry kind="src" path="zer-api-cuenta/src/main/java"/>
+	<classpathentry kind="src" path="zer-api-cuenta/src/test/java"/>
+	<classpathentry kind="src" path="zer-api-dashboard/src/main/java"/>
+	<classpathentry kind="src" path="zer-api-dashboard/src/test/java"/>
+	<classpathentry kind="src" path="zer-api-financiera/src/main/java"/>
+	<classpathentry kind="src" path="zer-api-financiera/src/test/java"/>
+	<classpathentry kind="src" path="zer-api-gateway/src/main/java"/>
+	<classpathentry kind="src" path="zer-api-gateway/src/test/java"/>
+	<classpathentry kind="src" path="zer-api-operacion/src/main/java"/>
+	<classpathentry kind="src" path="zer-api-operacion/src/test/java"/>
+	<classpathentry kind="src" path="zer-api-promotor-zona/src/main/java"/>
+	<classpathentry kind="src" path="zer-api-promotor-zona/src/test/java"/>
+	<classpathentry kind="src" path="zer-api-reportes/src/main/java"/>
+	<classpathentry kind="src" path="zer-api-reportes/src/test/java"/>
+	<classpathentry kind="src" path="zer-api-supervision/src/main/java"/>
+	<classpathentry kind="src" path="zer-api-supervision/src/test/java"/>
+	<classpathentry kind="src" path="zer-api-usuario/src/main/java"/>
+	<classpathentry kind="src" path="zer-api-usuario/src/test/java"/>
+	<classpathentry kind="src" path="zer-api-zona/src/main/java"/>
+	<classpathentry kind="src" path="zer-api-zona/src/test/java"/>
+	<classpathentry kind="output" path="zer-api-financiera/build/classes/java/main"/>
+</classpath>

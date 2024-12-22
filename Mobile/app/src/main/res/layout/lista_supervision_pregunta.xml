@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/background_light"
+                android:id="@+id/contenedor">
+
+    <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleX="1.10"
+            android:scaleY="1.10"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="12dp"
+            android:id="@+id/cumple"
+            android:buttonTint="@color/color_amarillo"
+            android:layout_below="@+id/pregunta"/>
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="9"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="0dp"
+            android:layout_marginTop="0dp"
+            android:id="@+id/pregunta"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColorHint="@color/color_boton"
+            android:textColorLink="@color/color_boton"
+            android:textColorHighlight="@color/color_boton"
+            android:backgroundTint="@color/color_boton"
+            android:textColor="@color/color_boton"
+            android:layout_alignParentTop="true"/>
+    <EditText
+            android:cursorVisible="true"
+            android:isScrollContainer="true"
+            android:inputType="textVisiblePassword"
+            android:ems="9"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:hint="Sin detalles."
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="0dp"
+            android:layout_marginTop="0dp"
+            android:id="@+id/valor"
+            android:layout_below="@+id/pregunta"
+            android:layout_toEndOf="@+id/cumple"
+            android:layout_marginStart="0dp"
+            android:textColorHint="@color/color_gris"
+            android:backgroundTint="@color/color_boton"
+            android:textColor="@color/color_boton"
+    />
+</RelativeLayout>
